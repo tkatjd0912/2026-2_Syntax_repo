@@ -7,44 +7,68 @@
             right = 2.5cm,
             top = 2cm,
             bottom = 2cm]{geometry}
-\usepackage{fancyhdr}                 
+\usepackage{fancyhdr}       
+\usepackage{gb4e}
+\noautomath
+\glossglue=0.7em plus 0.2em minus 0.1em
+\newcommand{\glabbr}[1]{\textsc{\MakeLowercase{#1}}}
 \pagestyle{fancy}
 \fancyhf{}                             
-\fancyfoot[L]{\nouppercase{통사론 (2025학년도 2학기)}} 
+\fancyfoot[L]{\nouppercase{Syntax(002) Midterm}} 
 \fancyfoot[R]{\thepage}                
 \renewcommand{\headrulewidth}{0pt}    
 \renewcommand{\footrulewidth}{0.4pt}   
+\setcounter{secnumdepth}{0}
 
 \begin{document}
 \large
 
-\title{통사론 중간고사 (2025학년도 2학기)}
-\author{교수자: 강초롱}
+\title{Syntax(002) Midterm}
+\author{강초롱}
 \date{2025 Fall}
 \maketitle
 \thispagestyle{fancy}
 \bigskip
 
-\section{Consider the following data taken from Turkish \normalsize(3 points)}
-\medskip \noindent 1) Siz \textbf{gid}-iyor.sun.uz.\par 
-\noindent 2) Ali \"{u}\c{c} ye\c{s}il top \textbf{al}-d\i,\par
-\noindent 3) Senin s\i{}nav\i{} \textbf{ge\c{c}}-meni \textbf{isti}-yorum.\par
-\bigskip
-\noindent a. In the data, PRES means ``present tense'', PST means ``past tense''. 
-What part of speech are `gid', `al', `ge\c{c}', and `isti'? 
-What tests did you use to figure out what speech they were? \par
-\vspace{1cm}
-\noindent b. Provide the PSRs needed to generate the trees (assume that every clause is a CP, and \textit{\"{u}\c{c}} ``three'' is an adjective). \par
-\vspace{1cm}
+\section{1. Consider the following data taken from Turkish \normalsize(3 points)}
+\medskip 
+\begin{exe}
+  \ex
+  \gll Siz \textbf{gid}-iyor.sun.uz.\\
+       you.\glabbr{PL} go-\glabbr{PRES}.2.\glabbr{PL}\\
+  \glt `You are going.'
 
-\section{Consider the following sentence \normalsize}
-\textit{The teacher saw that her students fought constantly after school in the parking lot.} \par
+  \ex
+  \gll Ali \"{u}\c{c} ye\c{s}il top \textbf{al}-d\i.\\
+       Ali three green ball buy-\glabbr{PST}.3\glabbr{SG}\\
+  \glt `Ali bought three green balls.'
+
+  \ex
+  \gll Senin s\i{}nav\i{} \textbf{ge\c{c}}-meni
+       \textbf{isti}-yorum.\\
+       you test pass-\glabbr{INF} want-\glabbr{PRES}.1\glabbr{SG}\\
+  \glt `I want you to pass the test.'
+\end{exe}
 \bigskip
-\noindent a. For the following words, indicate their part of speech AND \par
-\medskip \noindent i) if the word is an open class part of speech, explain the (morphological/syntactic)\\ distributional criteria by which you came up with that classification.\par
-\noindent ii) if the word is closed part of speech, indicate it with ``closed''.\par
-\noindent iii) Mark whether each word is a lexical or functional part of speech. (4 points) \par
+\noindent \textbf{a.} In the data, PRES means ``present tense'', PST means ``past tense''. 
+What part of speech are \textbf{`gid'}, \textbf{`al'}, \textbf{`ge\c{c}'}, and \textbf{`isti'}? 
+What tests did you use to figure out what speech they were? \par
+\vspace{3cm}
+\noindent \textbf{b.} Provide the PSRs needed to generate the trees \\(assume that every clause is a CP, and \textit{\"{u}\c{c}} ``three'' is an adjective). \par
+
+\newpage
+\section{2. Consider the following sentence \normalsize}
+\textbf{\textit{The teacher saw that her students fought constantly after school in the parking lot.}} \par
+\bigskip
+\noindent \textbf{a.} For the following words, indicate their part of speech AND \par
+\medskip \noindent (i) if the word is an open class part of speech, explain the (morphological/syntactic)\\ distributional criteria by which you came up with that classification.\par
+\vspace{1em}
+\noindent (ii) if the word is closed part of speech, indicate it with ``closed''.\par
+\vspace{1em}
+\noindent (iii) Mark whether each word is a lexical or functional part of speech. (4 points) \par
+\vspace{2em}
 \begin{description}
+    \setlength{\itemsep}{1em}
     \item[\textbf{The}]
     \item[\textbf{Teacher}] 
     \item[\textbf{Saw}] 
@@ -56,27 +80,58 @@ What tests did you use to figure out what speech they were? \par
 \end{description}
 
 \newpage
-\noindent b. The above sentence is ambiguous (assume that the ambiguity comes from the phrase ``in the parkng lot''). Draw the two PSR trees that distinguish the two possible meanings of the sentence. Provide a Korean paraphrase for each meaning. (2 points)
+\noindent \textbf{b.} The above sentence is ambiguous (assume that the ambiguity comes from the phrase ``in the parkng lot''). Draw the two PSR trees that distinguish the two possible meanings of the sentence. Provide a Korean paraphrase for each meaning. (2 points) \par
 
-\newpage 
-\noindent c. Draw the two X-bar theoretic trees that distinguish the two possible meanings of the sentence. Provide a Korean paraphrase for each meaning. (2 points)
+\vspace{8cm}
+\noindent \textbf{c.} Draw the two X-bar theoretic trees that distinguish the two possible meanings of the sentence. Provide a Korean paraphrase for each meaning. (2 points)
 
 \newpage
-\noindent d. Answer the following questions (6 points) \par
-\medskip \noindent i) Can the two theories (PSRs and X-bar theory) explain the ambiguity? If so, explain why. You must refer to the tree structures you provided above in your answer. \par
+\noindent \textbf{d.} Answer the following questions (6 points) \par
+\bigskip \noindent (i) Can the two theories (PSRs and X-bar theory) explain the ambiguity? If so, explain why. You must refer to the tree structures you provided above in your answer. \par
 \vspace{1.5cm}
-\noindent ii) In the slightly modified sentence below, the interpretation in which \textit{the parents fought after school at the park and the teacher saw it} is available. Can both theories account for this reading? \par
-\medskip \noindent \textit{The teacher saw that her students fought constantly after school in the parking lot. She saw that their parents did so at the park as well.}\par
+\noindent (ii) In the slightly modified sentence below, the interpretation in which \textit{the parents fought after school at the park and the teacher saw it} is available. Can both theories account for this reading? \par
+\medskip \noindent \textbf{\textit{The teacher saw that her students fought constantly after school in the parking lot. She saw that their parents did so at the park as well.}}\par
 \vspace{1.5cm}
-\noindent iii) Explain why (a) is ungrammatical but (b) is grammatical, referring to the rules of X-bar theory.\par
+\noindent (iii) Explain why (a) is ungrammatical but (b) is grammatical, referring to the rules of X-bar theory.\par
 \medskip \noindent (a) \*The teacher saw \textbf{the fight} that her students fought constantly after school in the parking lot.\par
 \medskip \noindent (b) The teacher saw that her students fought constantly after school in the parking lot \textbf{every day}.
 
 \newpage
-\section{Consider the following data from Breton, a Celtic language. \normalsize{(7 points)}}
+\section{3. Consider the following data from Breton, a Celtic language. \\ \normalsize{(7 points)}}
+\medskip
+\setcounter{exx}{0}
+\begin{exe}
+  \ex
+  \gll ar baner c'hlas \\
+       the basket blue \\
+  \glt `the blue basket'
+
+  \ex
+  \gll ar vleunienn wenn \\
+       the flower white \\
+  \glt `the white flower'
+
+  \ex
+  \gll Kador ar bugel bihan \\
+       Chair the child small \\
+  \glt `The small child's chair'
+
+  \ex
+  \gll Me a-zebr pesked alies \\
+       I eat fish often \\
+  \glt `I often eat fish'  
+\end{exe}
+\bigskip
+\noindent \textbf{i.} What is the setting of the specifier parameter? \par
+\vspace{2em}
+\noindent \textbf{ii.} What is the setting of the adjunct parameter? \par
+\vspace{2em}
+\noindent \textbf{iii.} What is the setting of the complement parameter? \par
+\vspace{2em}
+\noindent \textbf{iv.} Draw the X-bar theoretic tree for (d) and answer the following questions.
 
 \newpage
-\section{Draw the X-bar theoretic tree for the following sentence, and determine whether the matrix clause and the embedded clause are finite or non-finite. You must provide evidence for your answer. \normalsize{(3 points)}}
+\section{5. Draw the X-bar theoretic tree for the following sentence, and determine whether the matrix clause and the embedded clause are finite or non-finite. You must provide evidence for your answer. \normalsize{(3 points)}}
 \medskip
 \begin{center} 
     \textbf{I asked him to leave.}
