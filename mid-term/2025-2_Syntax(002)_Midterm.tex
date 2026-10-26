@@ -2,8 +2,8 @@
 \usepackage{kotex}
 \usepackage{setspace}  
 \setstretch{1.15}
-\usepackage{xcolor}
 \usepackage{graphicx}
+\usepackage{amssymb}
 \usepackage[linguistics]{forest}
 \usepackage[a4paper, 
             left = 2.5cm,
@@ -41,8 +41,7 @@
       align=center,
       parent anchor=south,
       child anchor=north,
-      text=blue,
-      edge={semithick,blue},
+      edge={semithick},
       inner sep=1pt,
       l sep=10mm,
       s sep=6mm
@@ -54,8 +53,7 @@
       align=center,
       parent anchor=south,
       child anchor=north,
-      text=blue,
-      edge={semithick,blue},
+      edge={semithick},
       inner sep=1pt,
       l sep=8mm,
       s sep=4.5mm
@@ -98,18 +96,10 @@
 \noindent \textbf{a.} In the data, PRES means ``present tense'', PST means ``past tense''. 
 What part of speech are \textbf{`gid'}, \textbf{`al'}, \textbf{`ge\c{c}'}, and \textbf{`isti'}? 
 What tests did you use to figure out what speech they were? \par
-\bigskip
-\noindent {\color{blue} verb. \\ because they all have suffixes like tense suffix and infinitive suffix, which verbs can have.}
-\vspace{1cm}
+\vspace{2cm}
 
 \noindent \textbf{b.} Provide the PSRs needed to generate the trees \\(assume that every clause is a CP, and \textit{\"{u}\c{c}} ``three'' is an adjective). \par
-\bigskip
-
-\noindent {\color{blue} CP → (C) TP
-\\ TP → (NP) (T) VP
-\\ VP → {NP/CP} V
-\\ NP → (AdjP+) N
-\\ AdjP → Adj} 
+\vspace{3cm}
 
 \newpage
 \section{2. Consider the following sentence \normalsize}
@@ -126,128 +116,25 @@ What tests did you use to figure out what speech they were? \par
 \vspace{2em}
 \begin{description}
     \setlength{\itemsep}{2em}
-    \item[\textbf{The}] {\color{blue} Determiner, closed, functional}
-    \item[\textbf{Teacher}] {\color{blue} Noun, open, lexical / becuase it has noun suffix `-er'} 
-    \item[\textbf{Saw}] {\color{blue} Verb, open, lexical / because it appears after the subject.}
-    \item[\textbf{That}] {\color{blue} Complementizer, closed, functional} 
-    \item[\textbf{Her}] {\color{blue} Determiner, closed, functional}
-    \item[\textbf{Constantly}] {\color{blue} Adverb, open, lexical / because it has adverb suffix `-ly'}
-    \item[\textbf{After}] {\color{blue} Preposition, closed, functional}
-    \item[\textbf{Parking}] {\color{blue} Adjective, open, lexical / because it has adjective suffix `-ing' and modifies the following noun `lot' \footnote{it also can be considered as a noun.}}  
+    \item[\textbf{The}] 
+    \item[\textbf{Teacher}] 
+    \item[\textbf{Saw}]
+    \item[\textbf{That}]
+    \item[\textbf{Her}]
+    \item[\textbf{Constantly}]
+    \item[\textbf{After}]
+    \item[\textbf{Parking}]
 \end{description}
 
 \newpage
 \noindent \textbf{b.} The above sentence is ambiguous (assume that the ambiguity comes from the phrase ``in the parkng lot''). Draw the two PSR trees that distinguish the two possible meanings of the sentence. Provide a Korean paraphrase for each meaning. (2 points) \par
-\bigskip
-\noindent {\color{blue} (1) 학생들이 주차장에서 싸우는 것을 선생님이 보았다.} 
-\bigskip
-\begin{center}
-\resizebox{\textwidth}{!}{%
-\begin{forest} ps tree
-[TP
-  [NP
-    [D The]
-    [N teacher]
-  ]
-  [VP
-    [V saw]
-    [CP [C that]
-        [TP 
-          [NP 
-            [D her]
-            [N students]
-          ]
-          [VP 
-            [V fought]
-            [AdvP [Adv constantly]]
-            [PP [P after] [NP [N school]]]   
-            [PP [P in] [NP [D the] [AdjP [Adj parking]] [N lot]]]
-            ]
-]]]]
-\end{forest}
-}
-\end{center}
-\newpage
-{\color{blue} (2) 학생들이 싸우는 것을 선생님이 주차장에서 보았다.} 
-\bigskip
-\begin{center}
-\resizebox{\textwidth}{!}{%
-\begin{forest} ps tree
-[TP
-  [NP
-    [D The]
-    [N teacher]
-  ]
-  [VP
-    [V saw]
-    [CP [C that]
-        [TP 
-          [NP 
-            [D her]
-            [N students]
-          ]
-          [VP 
-            [V fought]
-            [AdvP [Adv constantly]]
-            [PP [P after] [NP [N school]]]]]]
-    [PP [P in] [NP [D the] [AdjP [Adj parking]] [N lot]]]            
-]]
-\end{forest}
-}
-\end{center}
+\vspace{10cm}
+\null\vfill
 
 \newpage
 \noindent \textbf{c.} Draw the two X-bar theoretic trees that distinguish the two possible meanings of the sentence. Provide a Korean paraphrase for each meaning. (2 points)
-\bigskip
-
-\noindent {\color{blue} (1) 학생들이 주차장에서 싸우는 것을 선생님이 보았다.} 
-\bigskip
-\begin{center}
-\begin{forest} ps tree
-[CP
-  [\onebar{C}
-    [C]
-    [TP 
-      [DP [\onebar{D} [D The] [NP [\onebar{N} [N teacher]]]]]
-      [\onebar{T} [T] [VP [\onebar{V} [V saw] [CP
-        [\onebar{C}
-          [C that]
-          [TP]
-        ]
-      ]]]]
-    ]
-  ]
-]
-\end{forest}
-\end{center}
-\newpage
-{\color{blue} (2) 학생들이 싸우는 것을 선생님이 주차장에서 보았다.} 
-\bigskip
-\begin{center}
-\resizebox{\textwidth}{!}{%
-\begin{forest} ps tree
-[TP
-  [NP
-    [D The]
-    [N teacher]
-  ]
-  [VP
-    [V saw]
-    [CP [C that]
-        [TP 
-          [NP 
-            [D her]
-            [N students]
-          ]
-          [VP 
-            [V fought]
-            [AdvP [Adv constantly]]
-            [PP [P after] [NP [N school]]]]]]
-    [PP [P in] [NP [D the] [AdjP [Adj parking]] [N lot]]]            
-]]
-\end{forest}
-}
-\end{center}
+\vspace{10cm}
+\null\vfill
 
 \newpage
 \noindent \textbf{d.} Answer the following questions (6 points) \par
